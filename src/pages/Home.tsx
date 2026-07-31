@@ -1,12 +1,11 @@
 import { useNavigate } from 'react-router-dom'
-import { useLiveQuery } from 'dexie-react-hooks'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
-import { db } from '../db'
+import { useOngoingGame } from '../hooks/useSupabase'
 
 export default function Home() {
   const navigate = useNavigate()
-  const ongoingGame = useLiveQuery(() => db.games.filter((g) => !g.finished).first())
+  const ongoingGame = useOngoingGame()
 
   return (
     <Layout className="items-center justify-between p-6">

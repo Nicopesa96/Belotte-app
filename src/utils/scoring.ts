@@ -25,7 +25,7 @@ export function computeRoundScores(round: Round): { team1: number; team2: number
   }
 }
 
-export function computeGameTotals(game: Game): { team1: number; team2: number } {
+export function computeGameTotals(game: Pick<Game, 'rounds'>): { team1: number; team2: number } {
   return game.rounds.reduce(
     (acc, round) => {
       const scores = computeRoundScores(round)

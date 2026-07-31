@@ -1,3 +1,10 @@
+export interface Session {
+  id: string
+  date: number
+  name: string
+  note: string | null
+}
+
 export interface Player {
   id: string
   name: string
@@ -21,11 +28,12 @@ export interface Game {
   date: number
   team1: [string, string]
   team2: [string, string]
-  dealerPlayerId: string
+  dealer_player_id: string
   rounds: Round[]
-  team1Total: number
-  team2Total: number
+  team1_total: number
+  team2_total: number
   winner: 1 | 2 | null
   finished: boolean
-  targetScore: number
+  target_score: number
+  session_id: string | null
 }

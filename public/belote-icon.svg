@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#1a3a1a"/>
+  <rect x="96" y="80" width="320" height="352" rx="24" fill="#f5f0e0" stroke="#e8dfc0" stroke-width="4"/>
+  <!-- Top left B -->
+  <text x="126" y="168" font-family="Georgia, serif" font-size="88" font-weight="bold" fill="#1a3a1a">B</text>
+  <!-- Center suits -->
+  <text x="168" y="290" font-family="serif" font-size="64" fill="#c0392b">♥</text>
+  <text x="248" y="290" font-family="serif" font-size="64" fill="#1a3a1a">♠</text>
+  <text x="168" y="350" font-family="serif" font-size="64" fill="#c0392b">♦</text>
+  <text x="248" y="350" font-family="serif" font-size="64" fill="#1a3a1a">♣</text>
+  <!-- Bottom right B (upside down) -->
+  <text x="386" y="432" font-family="Georgia, serif" font-size="88" font-weight="bold" fill="#1a3a1a" transform="rotate(180 386 432)">B</text>
+</svg>
